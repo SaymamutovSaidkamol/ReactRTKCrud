@@ -4,7 +4,6 @@ import { Link, useRoutes } from "react-router-dom";
 // import About from './pages/About'
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
-const Comment = lazy(() => import("./pages/Comment"));
 
 const App = () => {
   return (
@@ -15,7 +14,6 @@ const App = () => {
       {useRoutes([
         { path: "/", element: <Home /> },
         { path: "/about", element: <About /> },
-        { path: "/comment", element: <Comment /> },
       ])}
     </>
   );

@@ -1,13 +1,10 @@
 import { useDeleteUserMutation, useGetUsersQuery } from "../redux/api/user.api";
 import { Button, Skeleton, Table, Popconfirm, notification } from "antd";
 import type { TableProps } from "antd";
-import { RadiusBottomrightOutlined } from "@ant-design/icons";
 import { useCallback, useState } from "react";
 import ModalWrapper from "../components/model/Modal";
 import { IoTrashOutline } from "react-icons/io5";
 import { FiEdit3 } from "react-icons/fi";
-import type { NotificationArgsProps } from "antd";
-type NotificationPlacement = NotificationArgsProps["placement"];
 
 export interface DataType {
   id: string;

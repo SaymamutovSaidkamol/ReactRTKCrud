@@ -13,7 +13,7 @@ const extendedApi = mainApi.injectEndpoints({
 
     createUser: build.mutation({
       query: (body) => ({
-        method: "GET",
+        method: "POST",
         url: "/user",
         body,
       }),

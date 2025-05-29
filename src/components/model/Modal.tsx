@@ -24,6 +24,8 @@ const ModalWrapper: FC<Props> = ({ isModalOpen, handleCancel, updateUser }) => {
     if (updateUser) {
       await editUser({ id: updateUser.id, body: values })
     } else {
+      console.log("Sas");
+      
       await createUser(values)
     }
     handleCancel()

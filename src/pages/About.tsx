@@ -1,9 +1,4 @@
-import React from "react";
-import {
-  useCreateRecipeMutation,
-  useDeleteRecipeMutation,
-  useGetRecipesQuery,
-} from "../redux/api/recipe.api";
+
 
 const About = () => {
   
